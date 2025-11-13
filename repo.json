@@ -1,0 +1,22 @@
+[
+  {
+    "Author": "Easy Raffle Contributors",
+    "Name": "Easy Raffle",
+    "InternalName": "EasyRaffle",
+    "AssemblyVersion": "2.5.0.0",
+    "Description": "Run raffles, EZ MODE - No authorization required",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/GamerLatte/Easy_Raffle",
+    "Tags": [ "raffle", "event", "giveaway" ],
+    "Punchline": "Easy raffles - Open Source",
+    "Changelog": "Version 2.5.0.0:\n- Removed authorized user list requirement\n- All users can now use the plugin without restrictions\n- No external API calls for authorization\n- Open source release",
+    "DownloadLinkInstall": "https://github.com/GamerLatte/Easy_Raffle/releases/latest/download/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/GamerLatte/Easy_Raffle/releases/latest/download/latest.zip",
+    "IconUrl": "https://raw.githubusercontent.com/GamerLatte/Easy_Raffle/main/easyraffle.ico",
+    "ImageUrls": [],
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "IsTestingPlugin": false
+  }
+]
+

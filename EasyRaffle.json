@@ -1,0 +1,23 @@
+{
+  "Author": "Easy Raffle Contributors",
+  "Name": "Easy Raffle",
+  "InternalName": "EasyRaffle",
+  "AssemblyVersion": "2.5.0.0",
+  "Description": "FFXIV Raffles - No authorization required",
+  "ApplicableVersion": "any",
+  "RepoUrl": "https://github.com/GamerLatte/Easy_Raffle",
+  "Tags": [
+    "raffle",
+    "plugin",
+    "event",
+    "giveaway"
+  ],
+  "DalamudApiLevel": 13,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "Punchline": "Run raffles, EZ MODE - Open Source",
+  "AcceptsFeedback": true
+}
+
