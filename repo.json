@@ -12,11 +12,18 @@
     "Changelog": "Version 2.5.0.0:\n- Removed authorized user list requirement\n- All users can now use the plugin without restrictions\n- No external API calls for authorization\n- Open source release",
     "DownloadLinkInstall": "https://raw.githubusercontent.com/GamerLatte/Easy-Raffle/main/latest.zip",
     "DownloadLinkUpdate": "https://raw.githubusercontent.com/GamerLatte/Easy-Raffle/main/latest.zip",
+    "DownloadLinkTesting": "",
     "IconUrl": "https://raw.githubusercontent.com/GamerLatte/Easy-Raffle/main/easyraffle.ico",
     "ImageUrls": [],
     "IsHide": false,
     "IsTestingExclusive": false,
-    "IsTestingPlugin": false
+    "IsTestingPlugin": false,
+    "DalamudApiLevel": 13,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "AcceptsFeedback": true
   }
 ]
 
