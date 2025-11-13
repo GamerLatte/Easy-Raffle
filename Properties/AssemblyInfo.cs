@@ -11,6 +11,6 @@ using System.Security.Permissions;
 [assembly: AssemblyInformationalVersion("1.0.0+ed0bc9869a22bdc98d5ceec99a457c51cf487bb2")]
 [assembly: AssemblyProduct("Easy Raffle")]
 [assembly: AssemblyTitle("Easy Raffle")]
-[assembly: AssemblyMetadata("RepositoryUrl", "https://github.com/GamerLatte/Easy_Raffle.git")]
+[assembly: AssemblyMetadata("RepositoryUrl", "https://github.com/GamerLatte/Easy-Raffle.git")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [module: RefSafetyRules(11)]

@@ -4,7 +4,7 @@
 
 1. **Create a new repository on GitHub**
    - Go to https://github.com/new
-   - Name it `Easy_Raffle`
+   - Name it `Easy-Raffle`
    - Make it public (or private if you prefer)
    - Do NOT initialize with README, .gitignore, or license (we already have these)
 
@@ -18,7 +18,7 @@
    git add .
    git commit -m "Initial commit - Easy Raffle plugin without authorization"
    git branch -M main
-   git remote add origin https://github.com/GamerLatte/Easy_Raffle.git
+   git remote add origin https://github.com/GamerLatte/Easy-Raffle.git
    git push -u origin main
    ```
 
@@ -51,7 +51,7 @@ To make the plugin available for download through Dalamud:
 
 4. **Update repo.json**
    - The `DownloadLinkInstall` and `DownloadLinkUpdate` should point to:
-     `https://github.com/GamerLatte/Easy_Raffle/releases/latest/download/latest.zip`
+     `https://github.com/GamerLatte/Easy-Raffle/releases/latest/download/latest.zip`
 
 ## Updating the Plugin
 

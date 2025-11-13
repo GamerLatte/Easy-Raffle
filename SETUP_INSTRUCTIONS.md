@@ -38,13 +38,13 @@ git branch -M main
 
 ### 3. Create GitHub Repository
 1. Go to https://github.com/new
-2. Name it `Easy_Raffle`
+2. Name it `Easy-Raffle`
 3. Make it public (recommended for open source)
 4. **Do NOT** initialize with README, .gitignore, or license
 
 ### 4. Push to GitHub
 ```bash
-git remote add origin https://github.com/GamerLatte/Easy_Raffle.git
+git remote add origin https://github.com/GamerLatte/Easy-Raffle.git
 git push -u origin main
 ```
 

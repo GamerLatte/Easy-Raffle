@@ -16,7 +16,7 @@
 In Dalamud, go to `Settings → Experimental` and add this repo URL:
 
 ```plaintext
-https://raw.githubusercontent.com/GamerLatte/Easy_Raffle/main/repo.json
+https://raw.githubusercontent.com/GamerLatte/Easy-Raffle/main/repo.json
 ```
 
 ### Step 2: Install  
@@ -101,8 +101,8 @@ Confirm before wiping your current raffle - just in case.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/GamerLatte/Easy_Raffle.git
-   cd Easy_Raffle
+   git clone https://github.com/GamerLatte/Easy-Raffle.git
+   cd Easy-Raffle
    ```
 
 2. Restore dependencies:
