@@ -76,7 +76,7 @@ Thumbs.db
 desktop.ini
 
 # Plugin specific
-latest.zip
+# latest.zip - Keep this file, it's needed for installation
 extracted/
 decompiled/
 

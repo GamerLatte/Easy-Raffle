@@ -1,0 +1,59 @@
+name: Build Plugin
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.0.x'
+    
+    - name: Restore dependencies
+      run: dotnet restore
+    
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    
+    - name: Create plugin package
+      run: |
+        $releaseDir = "release"
+        New-Item -ItemType Directory -Path $releaseDir -Force | Out-Null
+        Copy-Item "bin\Release\net9.0\EasyRaffle.dll" -Destination $releaseDir
+        Copy-Item "bin\Release\net9.0\EasyRaffle.pdb" -Destination $releaseDir -ErrorAction SilentlyContinue
+        Copy-Item "EasyRaffle.json" -Destination $releaseDir
+        Copy-Item "easyraffle.ico" -Destination $releaseDir
+        Copy-Item "easyraffle.png" -Destination $releaseDir
+        
+        # Copy dependencies if they exist
+        if (Test-Path "bin\Release\net9.0\ECommons.dll") {
+          Copy-Item "bin\Release\net9.0\ECommons.dll" -Destination $releaseDir
+        }
+        
+        # Create zip file
+        Compress-Archive -Path "$releaseDir\*" -DestinationPath "latest.zip" -Force
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: plugin-package
+        path: latest.zip
+    
+    - name: Commit and push latest.zip
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add latest.zip
+        git diff --staged --quiet || git commit -m "Update latest.zip [skip ci]"
+        git push
+
